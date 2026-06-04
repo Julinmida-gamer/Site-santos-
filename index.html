@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="alô ex.css">
+   <title>SANTOS FC</title>
+ </head>
+<body>
+
+<header>
+<h2>SANTOS FC<h2>
+<img src="santos.png" height="180px" width="180px"> 
+<img src="gif-santos.gif" alt="Torcida Jovem" height="250px" width="250px"> 
+</header>
+<nav>
+<a href="index.html.html"> INICIO</a>
+<a href="Page_2.html"> TROFÉUS</a>
+<a href="Page-3.html"> ESTÁDIO</a>
+<a href="Page_4.html"> ELENCO</a>
+</nav>
+
+<section>
+<h3>Santos Futebol Clube, mais conhecido apenas como Santos, é um clube poliesportivo brasileiro da cidade homônima, do estado de São Paulo. Foi fundado em 14 de abril de 1912. Inicialmente suas cores seriam o branco, azul e dourado, mas um ano após a sua fundação, ficou decidido que as cores do clube passariam a ser branco e preto. O clube manda as suas partidas no Estádio Urbano Caldeira, mais conhecido como Vila Belmiro. Seus maiores rivais no futebol são o Palmeiras, com quem disputa o Clássico da Saudade; o Corinthians, com quem disputa o Clássico Alvinegro; e o São Paulo, com quem disputa o San-São.</h3>
+
+<h3> O Santos tornou-se no futebol um dos clubes mais bem-sucedidos do Brasil e reconhecidos mundialmente. Ficou famoso na década de 1960 pelos vários títulos internacionais e nacionais conquistados e por ter revelado Pelé, considerado por muitos como o maior jogador da história do esporte, e segundo a FIFA, o melhor jogador do século XX. Além disso, o Rei também tem o marco de maior artilheiro da história do Santos e o segundo maior artilheiro da Seleção Brasileira. À frente de Pelé, com mais de 70 gols pela Seleção em jogos oficiais, está Neymar, outro jogador também revelado pelo clube.</h3>
+
+<h3>Ao longo de sua história, o Santos conquistou um grande número de títulos internacionais, com destaque para os mundiais de 1962 e 1963, as Copas Libertadores de 1962, 1963 e 2011, a Recopa dos Campeões Intercontinentais de 1968, a Copa CONMEBOL de 1998 e a Recopa Sul-Americana de 2012. No cenário nacional é octacampeão brasileiro: 1961, 1962, 1963, 1964, 1965, 1968, 2002 e 2004. Ainda no âmbito nacional, o clube possui uma Copa do Brasil vencida em 2010, totalizando nove conquistas nacionais. Outros títulos importantes incluem cinco Torneios Rio-São Paulo (recordista ao lado de Corinthians e Palmeiras), 22 Campeonatos Paulistas e a Copa Paulista de 2004. Na somatória de títulos oficiais de abrangência internacional e nacional, o clube possui 17 conquistas. Ao todo, somando competições oficiais, amistosas e outras taças, o clube possui 305 títulos.</h3>
+
+<h3>O Santos foi eleito pela FIFA em 2000 o quinto maior clube de futebol do Século XX, sendo o melhor clube das Américas na lista, e também recebeu no ano de seu centenário na câmara dos deputados em Brasília pela FIFA o título de "maior clube sul-americano do Século XX". Além de ser o clube brasileiro que mais enfrentou estrangeiros na história, o Santos é também o único clube brasileiro a ser campeão estadual, nacional, continental e mundial no mesmo ano, em 1962. Outro feito único do clube é ser o que mais marcou gols na história do futebol mundial, tendo sido o primeiro a alcançar a marca de 12 mil gols.</h3>
+<p>
+
+</p>
+</section>
+
+
+<footer>
+    <h3>🎵 Hino do Santos FC 🎵</h3>
+
+    <audio id="musica" autoplay loop>
+        <source src="santos.mp4" type="audio/mp4">
+    </audio>
+
+    <button onclick="toggleAudio()" id="botaoAudio">
+        ⏸️ Pausar Música
+    </button>
+
+    <script>
+        const audio = document.getElementById("musica");
+        const botao = document.getElementById("botaoAudio");
+
+        function toggleAudio() {
+            if(audio.paused){
+                audio.play();
+                botao.innerHTML = "⏸️ Pausar Hino";
+            }else{
+                audio.pause();
+                botao.innerHTML = "▶️ Tocar Hino";
+            }
+        }
+    </script>
+</footer>
+
