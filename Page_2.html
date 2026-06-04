@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="alô ex.css">
+   <title>SANTOS FC</title>
+ </head>
+<body>
+
+<header>
+<h2>SANTOS FC<h2>
+<img src="santos.png" height="250px" width="250px"> 
+<img src="gif-santos.gif" alt="Torcida Jovem" height="250px" width="250px"> 
+</header>
+
+<nav>
+<a href="index.html"> INICIO</a>
+<a href="Page_2.html"> TROFÉUS</a>
+<a href="Page_3.html"> ESTÁDIO</a>
+<a href="Page_4.html"> ELENCO</a>
+</nav>
+
+<section>
+<h2>Títulos internacionais</h2>
+<h4>2× Mundial Interclubes — 1962 e 1963</h4>
+<h4>1× Recopa Intercontinental — 1968</h4>
+<h4>3× Copa Libertadores da América — 1962, 1963 e 2011</h4>
+<h4>2× Recopa Sul-Americana — 1968 e 2012</h4>
+<h4>1× Copa CONMEBOL — 1998</h4>
+
+<h2>Títulos nacionais</h2>
+<h4>8× Campeonato Brasileiro Série A</h4>
+<h4>1961</h4>
+<h4>1962</h4>
+<h4>1963</h4>
+<h4>1964</h4>
+<h4>1965</h4>
+<h4>1968</h4>
+<h4>2002</h4>
+<h4>2004</h4>
+<h4>1× Copa do Brasil — 2010</h4>
+<h4>1× Campeonato Brasileiro Série B — 2024</h4>
+
+<h2>Títulos interestaduais</h2>
+<h4>5× Torneio Rio–São Paulo</h4>
+<h4>1959</h4>
+<h4>1963</h4>
+<h4>1964</h4>
+<h4>1966</h4>
+<h4>1997</h4>
+
+<h2>Títulos estaduais</h2>
+<h4>22× Campeonato Paulista</h4>
+<h4>1935   1968</h4>
+<h4>1955   1967</h4>
+<h4>1956   1969</h4>
+<h4>1958   1973</h4>
+<h4>1960   1978</h4>
+<h4>1961   1984</h4>
+<h4>1962   2006</h4>
+<h4>1964   2007</h4>
+<h4>1965   2010</h4>
+<h4>2011   2015</h4>
+<h4>2012   2016</h4>
+
+<p>
+
+<footer>
+ <h3>🎵 Hino do Santos FC 🎵</h3>
+
+    <audio id="musica" autoplay loop>
+        <source src="santos.mp4" type="audio/mp4">
+    </audio>
+
+    <button onclick="toggleAudio()" id="botaoAudio">
+        ⏸️ Pausar Música
+    </button>
+
+    <script>
+        const audio = document.getElementById("musica");
+        const botao = document.getElementById("botaoAudio");
+
+        function toggleAudio() {
+            if(audio.paused){
+                audio.play();
+                botao.innerHTML = "⏸️ Pausar Hino";
+            }else{
+                audio.pause();
+                botao.innerHTML = "▶️ Tocar Hino";
+            }
+        }
+    </script>
+</footer>
+
+</body>
+</html>
