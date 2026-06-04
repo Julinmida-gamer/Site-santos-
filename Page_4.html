@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="alô ex.css">
+   <title>SANTOS FC</title>
+ </head>
+<body>
+
+<header>
+<h2>SANTOS FC<h2>
+<img src="santos.png" height="180px" width="180px"> 
+<img src="gif-santos.gif" alt="Torcida Jovem" height="250px" width="250px"> </header>
+
+<nav>
+<a href="index.html"> INICIO</a>
+<a href="Page_2.html"> TROFÉUS</a>
+<a href="Page_3.html"> ESTÁDIO</a>
+<a href="Page_4.html"> ELENCO</a>
+</nav>
+<section>
+<img src="elenco.jpg"  class="poihu">
+</section> 
+<p>
+
+<footer>
+ <h3>🎵 Hino do Santos FC 🎵</h3>
+
+    <audio id="musica" autoplay loop>
+        <source src="santos.mp4" type="audio/mp4">
+    </audio>
+
+    <button onclick="toggleAudio()" id="botaoAudio">
+        ⏸️ Pausar Música
+    </button>
+
+    <script>
+        const audio = document.getElementById("musica");
+        const botao = document.getElementById("botaoAudio");
+
+        function toggleAudio() {
+            if(audio.paused){
+                audio.play();
+                botao.innerHTML = "⏸️ Pausar Hino";
+            }else{
+                audio.pause();
+                botao.innerHTML = "▶️ Tocar Hino";
+            }
+        }
+    </script>
+</footer>
+
+</body>
+</html>
